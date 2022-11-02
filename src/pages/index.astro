@@ -1,50 +1,68 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import BaseHead from "../components/BaseHead.astro";
+import Navbar from "../components/Navbar.astro";
+import SocialMediaButtons from '../components/SocialMediaButtons.astro';
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Navbar title={SITE_TITLE} />
+    <!-- <Header title={SITE_TITLE} /> -->
+    <header>
+      <div class="container">
+        <div class="grid">
+          <div>
+            <hgroup>
+              <h1>{SITE_TITLE}</h1>
+              <h2>{SITE_DESCRIPTION}</h2>
+            </hgroup>
+            <SocialMediaButtons />
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <p>Hola 👋, Bienvenido a mi sitio web 😁!</p>
+        <p>
+          Full Stack Developer, cuento con 4 años de experiencia, mi principal
+          Stack tecnologico se basa en Ruby on Rails, PostgreSQL, AWS, React JS,
+          React Native. Tengo experiencia en Python, NodeJS y sus tecnologías
+          deribadas. Se que esta mal que yo lo diga, pero soy muy bueno en el
+          diseño frontend 😜.
+        </p>
+        <p>
+          Me gusta sentirme dueño de los proyectos en los que trabajo y no solo
+          escribir código, sino también tener una visión crítica del producto,
+          las funcionalidades y el modelo de negocio. No soy solo un profesional
+          que escribe codigo, soy un profesional que soluciona problemas.
+        </p>
+        <!-- Blockquote-->
+        <blockquote>
+          "Estoy convencido de que el aprendizaje autodidacta es el único
+          aprendizaje válido."
+          <footer>
+            <cite>- Isaac Asimov</cite>
+          </footer>
+        </blockquote>
+        <p>
+          Imagina escribir el libro que siempre quisiste leer, eso es este
+          espacio para mi 😅, no solo es mi pagina web o donde subo artículos o
+          proyectos, también es el espacio donde escribo lo que me hubiese
+          gustado aprender cuando empecé a programar, esas pequeñas dudas que no
+          te dejan avanzar, que no te dejan dormir, pues trato de resolverlas en
+          este espacio.
+        </p>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
