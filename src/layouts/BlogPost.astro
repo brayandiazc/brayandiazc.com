@@ -1,54 +1,74 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 
 export interface Props {
-	content: {
-		title: string;
-		description: string;
-		pubDate?: string;
-		updatedDate?: string;
-		heroImage?: string;
-	};
+  content: {
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+    heroImage?: string;
+    imageSource?: string;
+    imageUrl?: string;
+  };
 }
 
 const {
-	content: { title, description, pubDate, updatedDate, heroImage },
+  content: {
+    title,
+    description,
+    pubDate,
+    updatedDate,
+    heroImage,
+    imageSource,
+    imageUrl,
+  },
 } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
-			}
-			hr {
-				border-top: 1px solid #ddd;
-				margin: 1rem 0;
-			}
-		</style>
-	</head>
+<html lang="es">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
-				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{updatedDate && (
-					<div>
-						Last updated on <time>{updatedDate}</time>
-					</div>
-				)}
-				<hr />
-				<slot />
-			</article>
-		</main>
-		<Footer />
-	</body>
+  <body>
+    <Navbar />
+    <main>
+      <section class="container">
+        <hgroup>
+          <h1>{title}</h1>
+          <h2>{description}</h2>
+        </hgroup>
+        <figure>
+          {
+            heroImage && (
+              <img
+                width={1920}
+                height={360}
+                src={heroImage}
+                alt="Imagen de portada"
+              />
+            )
+          }
+          <figcaption>
+            Imagen de <a href={imageUrl} target="_blank">{imageSource}</a>
+          </figcaption>
+        </figure>
+        <hr />
+        <slot />
+        <hr />
+        {pubDate && <time>{pubDate}</time>}
+        {
+          updatedDate && (
+            <div>
+              Ultima actualización <time>{updatedDate}</time>
+            </div>
+          )
+        }
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>

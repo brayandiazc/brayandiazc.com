@@ -48,7 +48,7 @@ The blockquote element represents content that is quoted from another source, op
 ## Tables
 
 | Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
+| --------- | -------- | ------ |
 | *italics* | **bold** | `code` |
 
 ## Code Blocks
