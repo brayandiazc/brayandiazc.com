@@ -1,7 +1,8 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "Emprende"
-description: "Dar el primer paso siempre es lo mas dificil, no importa tu ubicacion, no importa tu edad, tu sexo, tu religion o profesión."
+title: "Emprende 🚀"
+subtitle: "emprender == empezar"
+description: "Dar el primer paso siempre es lo mas dificil, no importa tu ubicacion, no importa tu edad, tu sexo, tu religion o profesión, siempre se hara dificil dar el primer paso."
 pubDate: "Dec 14 2022"
 heroImage: "/images/blog/emprende.jpg"
 imageSource: "freepik.com"
