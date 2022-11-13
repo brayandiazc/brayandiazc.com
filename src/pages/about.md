@@ -1,7 +1,7 @@
 ---
 layout: "../layouts/BlogPost.astro"
-title: "About Me"
-description: "Lorem ipsum dolor sit amet"
+title: "Sobre mi 😅"
+description: "Te contare un poco sobre quien soy, que hago, que me gusta y en que me gustaria colaborar."
 updatedDate: "August 08 2022"
 heroImage: "/placeholder-about.jpg"
 ---
