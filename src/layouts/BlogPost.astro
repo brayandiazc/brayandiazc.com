@@ -10,11 +10,21 @@ export interface Props {
     pubDate?: string;
     updatedDate?: string;
     heroImage?: string;
+    imageSource?: string;
+    imageUrl?: string;
   };
 }
 
 const {
-  content: { title, description, pubDate, updatedDate, heroImage },
+  content: {
+    title,
+    description,
+    pubDate,
+    updatedDate,
+    heroImage,
+    imageSource,
+    imageUrl,
+  },
 } = Astro.props;
 ---
 
@@ -43,18 +53,20 @@ const {
             )
           }
           <figcaption>
-            {pubDate && <time>{pubDate}</time>}
-            {
-              updatedDate && (
-                <div>
-                  Ultima actualización <time>{updatedDate}</time>
-                </div>
-              )
-            }
+            Imagen de <a href={imageUrl} target="_blank">{imageSource}</a>
           </figcaption>
         </figure>
         <hr />
         <slot />
+        <hr />
+        {pubDate && <time>{pubDate}</time>}
+        {
+          updatedDate && (
+            <div>
+              Ultima actualización <time>{updatedDate}</time>
+            </div>
+          )
+        }
       </section>
     </main>
     <Footer />
