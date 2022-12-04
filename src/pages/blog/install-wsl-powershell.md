@@ -6,7 +6,7 @@ description: "Usa Linux sin tener que salir de Windows, con WSL. Instalación po
 pubDate: "Dec 6 2022"
 heroImage: "/images/blog/install-wsl-powershell.jpg"
 imageSource: "unplash.com"
-imageUrl: "https://unsplash.com/es/fotos/4Mw7nkQDByk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+imageUrl: "https://unsplash.com/es/fotos/xbEVM6oJ1Fs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
 ---
 
 Durante mucho tiempo, los desarrolladores de software han estado usando Linux como su sistema operativo principal. Sin embargo, para los usuarios de Windows, la única opción era usar Windows como su sistema operativo principal.
