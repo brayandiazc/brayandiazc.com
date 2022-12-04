@@ -1,10 +1,10 @@
 ---
 layout: "../../layouts/BlogPost.astro"
 title: "Instalación de WSL usando la Microsoft Store 🛒"
-subtitle: "require 'WSL'"
+subtitle: "require 'MicrosoftStore/WSL'"
 description: "Usa Linux sin tener que salir de Windows, con WSL. Instalación por medio de interfaz gráfica."
 pubDate: "Dec 5 2022"
-heroImage: "/images/blog/instalar-wsl.jpg"
+heroImage: "/images/blog/install-wsl-microsoft-store.jpg"
 imageSource: "unplash.com"
 imageUrl: "https://unsplash.com/es/fotos/4Mw7nkQDByk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
 ---
@@ -35,7 +35,7 @@ WSL solo es compatible con Windows 10 y Windows 11. Sin embargo, no todas las ve
 
 Puedes comprobar tu versión de Windows 10 en la configuración de Windows. Para abrir la configuración de Windows, presiona la tecla de Windows + I. En la configuración de Windows, haz clic en "Sistema" y luego haz clic en "Información". En la página "Información", puedes ver la versión de Windows 10 que tienes instalada.
 
-![Verificar version windows](/images/blogContent/instalar-wsl/verificar-version-windows.png)
+![Verificar version windows](/images/blogContent/install-wsl-microsoft-store/verificar-version-windows.png)
 
 En mi caso tengo Windows 11, por lo que no tengo ningún problema para usar WSL.
 
@@ -43,19 +43,19 @@ En mi caso tengo Windows 11, por lo que no tengo ningún problema para usar WSL.
 
 Para instalar WSL, abre la **Microsoft Store** Windows y busca WSL. Haz clic en el primer resultado y luego haz clic en Instalar. Después de instalar WSL, reinicia tu computadora.
 
-![Windows store instalar wsl](/images/blogContent/instalar-wsl/windows-store-instalar-wsl.png)
+![Windows store instalar wsl](/images/blogContent/install-wsl-microsoft-store/windows-store-instalar-wsl.png)
 
 ## Instalación de Linux
 
 Para instalar algun kernel de Linux, abre la **Microsoft Store** de Windows y busca distribuci{on de Linux de tu preferencia, en mi caso instalare la distribución de Ubuntu. Haz clic en el primer resultado y luego haz clic en Instalar. Después de instalar, reinicia tu computadora.
 
-![Windows store instalar ubuntu](/images/blogContent/instalar-wsl/windows-store-instalar-ubuntu.png)
+![Windows store instalar ubuntu](/images/blogContent/install-wsl-microsoft-store/windows-store-instalar-ubuntu.png)
 
 ## Configuración de Linux
 
 Para configurar Linux, abre la aplicación Linux y sigue las instrucciones, te pedirá que ingreses un **usuario** y **contraseña**. Después de configurar Linux, puedes usar Linux en Windows.
 
-![Configuración inicial ubuntu](/images/blogContent/instalar-wsl/configuracion-inicial-ubuntu.png)
+![Configuración inicial ubuntu](/images/blogContent/install-wsl-microsoft-store/configuracion-inicial-ubuntu.png)
 
 ## Instalación de aplicaciones de Linux en Windows
 
